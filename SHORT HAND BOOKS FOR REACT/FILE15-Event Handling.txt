@@ -1,0 +1,25 @@
+1) EVENT HANDLING:
+    -> The events in the React app are same as the Javascript events.
+
+    -> Parameters can be passed ti the events
+
+    -> React components use event handlers to respond to user interactions , such as button clicks, form submissions, and more.
+
+    -> In JSX, you attach event handlers to DOM elements by using camelCase event names like onClick, onChange , etc.
+
+    -> Common events include onClick, onChange, onSubmit, onMouseOver, onMouseOut , onKeyDown, onKeyUp, and more.
+
+
+    THERE ARE TWO WAYS TO IMPLEMENT TO EVENTS 
+        1.1) We can refer the event handler in the parent component.
+        1.2) The event handler can be in the child component
+
+2) PASSING ARGUMENTS :
+    -> To pass additional data to event handlers, you can use arrow functions or the bind method. Example: onClick={() => handleClick(id)}.
+
+3) EVENT OBJECTS :
+    -> Event handlers receive an event object as the first parameter, containing information about the event, like target element, type, etc.
+
+4) PREVENTING DEFAULT BEHAVIOR :
+    -> To prevent the default behavior of an event (e.g., form submission or link navigation) , use event.preventDefault() inside the event handler.
+

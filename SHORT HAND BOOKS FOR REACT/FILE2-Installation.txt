@@ -1,0 +1,8 @@
+1. WE will learn to install REACT APP
+2.We will start with "create-react-app"
+3.Prerequiste
+	a. Editor - Visual Studio Code
+	b. Node   - Installed
+	c. npm    - not Installed
+4.npm install npm -g
+5.npm install create-react-app -g

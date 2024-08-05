@@ -1,0 +1,10 @@
+PURE COMPONENTS
+    -> Pure components are components that don't depend on external factors and always produce the same output for the same input.
+
+    -> They are optimized for performance and prevent unnecessary re-renders by implementing shallow prop and state comparision.
+
+    -> React's 'PureComponent' class is an optimized version of a class component that automatically performs shallow comparision of props and state.
+
+    -> Using pure components can reduce rendering and improve the efficiency of your application.
+
+    -> Pure components are particularly useful when dealing with large list or data sets that need to be updated frequently.

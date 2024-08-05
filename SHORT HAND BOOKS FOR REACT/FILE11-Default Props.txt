@@ -1,0 +1,8 @@
+1) DEFAULT PROPS :
+    -> Default props are a way to provide fallback values for props in React components.
+
+2) SETTING DEFAULT PROPS :
+    -> Default props are set using the defaultProps property within a React components.
+
+3) FALLBACK VALUES :
+    -> When a props is not explicitly passed from the parent component, the default value specified in defaultProps will be used insteaded.

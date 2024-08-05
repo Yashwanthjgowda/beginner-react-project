@@ -1,0 +1,48 @@
+REACT FOLDER STRUCTURE
+ 1.node_modules Directory or Folder
+	->There are dependencies or packages for the projects
+2.package.json
+	->This is where we can see the dependencies of the project.
+3.package-lock.json
+	->This has the setup + dependencies of the project
+4.Readme.md
+	->This file has the documentation of the project.
+5. .gitignore
+	->This file ignore the files/folders mentioned in the file.
+6.public directory
+	->favicon.ico ->Display favicon in the browser application
+	->logo.png
+	->manifest.json ->Generic setting of the project
+	->index.html
+		->VERY VERY IMPORTANT
+		->STARTING POIN OF YOUR PROJECT
+		->Single Page Application
+			->Only index.html is there |||
+
+	Entry point of our application.
+	<div id="root></div>
+
+	->robots.txt ->SEO /Search Engine
+7.SRC Directory:
+	->index.js
+		->The entry point of your application
+		->It renders the root component into the DOM
+	->App.js
+		->This is the main component of your application
+		->This where you defined the overall structure and layout app.
+	->Components
+		->This directory houses reusable UI components that are used throughout the 			application
+	->Assets
+		->Here, you can store static assets like image, fonts or other files.
+	->Style.css
+		->Holds CSS or other styling files used across the application.
+		->This is where you might include global styles or styles specific to
+			certain components.
+	->App.test.js
+		->This is where you can write test cases for your App component using 				testing frameworks list jest.
+	->index.css
+		->Global CSS file that gets imported in the entry index.js You can use this
+			to apply global styles or reset.
+
+
+

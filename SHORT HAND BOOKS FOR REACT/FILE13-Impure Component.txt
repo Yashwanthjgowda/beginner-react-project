@@ -1,0 +1,10 @@
+PURE COMPONENTS
+    -> Pure components can produce different outputs for the same input due to external factors like changing global state or external data.
+
+    -> Regular class components or functional components without optiozation checks are considered impure by default.
+
+    -> Impure components might lead to unnecessary re-renders and decreased performance it not handled properly.
+
+    -> Impure components are still essential when dealing with components that rely on external data or side effects.
+
+    -> Its important to optimize impure components using techniques like memoization or proper dependancy management.

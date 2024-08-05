@@ -1,0 +1,126 @@
+REACT COMPONENTS TYPE 
+    1) CLASS COMPONENT(old or Traditional version)
+        - React.Component is for to create a class Component.
+        - We have only learned one way to update the UI. We call root.render() to change the rendered output.
+        - STATE and LIFECYCLE methods are belongs to the class Component.
+        - State is used for to define the Variables and object of the class component.
+        - Lifecycle methods allow you to control the component's behavior and perform specific actions at different stages.
+
+    2) FUNCTION COMPONENT(Updated or Modern version)
+        - Updated React component
+        - Here, return method is used for to update the UI component and it returns only one element.
+        - HOOKS are belongs to the REACT function component.
+        - Hooks are functions that let you “hook into” React state and lifecycle features from function components. 
+        - Hooks don't work inside classes — they let you use React without classes.
+        - Hooks allow function components to have access to state and other React features. Because of this, class components are generally no longer needed.
+
+REACT LIFECYCLE METHODS
+    -> A component's lifecycle has three main phases: 
+        1) Mounting Phase 
+            - The mounting phase refers to the period when a component is being created and inserted into the DOM.
+
+        2) Updating Phase
+            - This phase occurs when a component's props or state changes, and the component needs to be updated in the DOM.
+
+        3) Unmounting Phase.
+            - The unmounting phase refers to the lifecycle stage when a component is being removed from the DOM (Document Object Model) and is no longer rendered or accessible.
+
+    -> These methods allow you to control the component's behavior and perform specific actions at different stages of its lifecycle.
+
+    -> In React, class components have a series of lifecycle methods that are called at different points during the components lifecycle.
+
+	-> These methods allow you to perform actions or side effects at specific times in the components existence.
+
+	-> However, it's important to note that with the introduction of React Hooks in React 16.8, many of these lifecycle methods are no longer necessary for functional components, as you can achieve similar functionality using hooks like useEffect.
+
+MOUNTING PHASE METHODS
+    1) constructor() :
+        -> The constructor() method is called when the component is first created. 
+
+        -> The constructor is called when an instance of the components is being created.
+
+        -> You can use it to initialize state and bind event handlers.
+
+    2) render() :
+        -> The render() method is responsible for generating the component's virtual DOM representation based on its current props and state. 
+
+        -> It is called every time the component needs to be re-rendered, either because its props or state have changed, or because a parent component has been re-rendered.
+
+    3) componentWillMount() :
+        // Presently they are removed. It exist up to REACT 16V
+                
+        -> ComponentWillMount() is generally used to show a loader when the component is being loaded or when the data from the server is being fetched.
+
+        -> The componentWillMount() method allows us to execute the React code synchronously when the component gets loaded or mounted in the DOM (Document Object Model).
+
+    4) componentDidMount()
+                
+        -> componentDidMount() is invoked immediately after a component is mounted.
+        
+        -> This method is called after the component has been inserted into the DOM.
+		
+        -> It's often used for data fetching, setting up subscriptions, or making initial DOM manipulations.
+
+        -> The componentDidMount() method allows us to execute the React code when the component is already placed in the DOM (Document Object Model).
+
+        -> This method is called during the Mounting phase of the React Life-cycle i.e after the component is rendered.
+
+UPDATE PHASE METHODS
+    I) componentWillReceiveProps(newProps, newContext); 
+        // Presently they are removed. It exist up to REACT 16V
+
+        -> componentWillReceiveProps is required if you want to update the state values with new props values, this method will get called whenever any change happens to props values.
+
+    II) shouldComponentUpdate(newProps, newState);
+        -> This method is called before a component re-renders.
+
+        -> It returns a Boolean value that determines whether rendering should happen.
+
+        ->It can be used to optimize rendering by determining if the component should update based on changes in props or state.
+
+        -> React automatically calls shouldComponentUpdate, it is triggered before the re-rendering process starts (in this case of your parent component.) So naturally it is called frequently.
+
+    III) componentWillUpdate(newProps, newState);
+        // Presently they are removed. It exist up to REACT 16V
+        -> This method is called just before a component is removed from the DOM.
+            
+        -> It's used to perform cleanup, such as cancelling network requests or removing event listeners.
+
+        -> The componentWillUpdate gives you control to manipulate the component just before it receives new props or state. I generally use it to do animations.
+
+    IV) render()
+
+    V) componentDidUpdate(oldProps, oldState);
+                
+        -> This lifecycle method is invoked as soon as the updating happens. 
+
+        -> This method is called after a component's update has been flushed to the DOM.
+        
+        -> The most common use case for the componentDidUpdate() method is updating the DOM in response to prop or state changes.
+
+        -> It's commonly used for side-effects that depend on the previous props and state.
+
+UNMOUNTING PHASE METHODS
+    I) componentWillUnmount()
+        -> This method is called just before a component is removed from the DOM.
+
+		-> It's used to perform cleanup, such as cancelling network requests or removing event listeners.
+
+        -> The componentWillUnmount() method allows us to execute the React code when the component gets destroyed or unmounted from the DOM (Document Object Model).
+
+
+PRACTICE CODE METHODS
+    -> App.jsx
+        1) render(){}
+        2) mount(){}
+        3) unmount(){}
+
+    -> Counter.jsx 
+        1) componentWillMount(){}
+        2) componentDidMount(){}
+        3) updateCounter(){} // User Defined Method
+        4) componentWillReceiveProps(nP, nC) {}
+        5) shouldComponentUpdate(nP, nS) {} // return true of false, default state always true.
+        6) componentWillUpdate(nP, nS){} // When you update the props value then only will get the response from this method else not because shouldComponentUpdate() return true and if you specify then only it will update;
+        7) componentDidUpdate(oP, oS){}
+        8) componentWillUnmount(){}

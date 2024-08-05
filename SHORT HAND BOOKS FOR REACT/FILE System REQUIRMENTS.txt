@@ -1,0 +1,25 @@
+SYSTEM REQUIRMENTS
+	1. Node JS
+	  -> Install it for free
+	  ->node -v(node version)
+		-> v20.15.0
+
+	2. NPM Version
+	  -> npm -v
+		->10.8.0
+
+	3.Powerfull Editor
+	  ->Visual Studio Code -Free
+	  ->Sublime Text
+	  ->IntelliJ
+	  ->Atom and etc
+
+	4.Browser
+	  ->Chrome ->ReactDevTools ->Recomendation
+	  ->Edge   ->ReactDevTools ->Recomendation
+	  ->FireFox->ReactDevTools ->Recommendation
+	5. cra -Create-React-App
+	  ->Starting point of learning
+
+	
+	

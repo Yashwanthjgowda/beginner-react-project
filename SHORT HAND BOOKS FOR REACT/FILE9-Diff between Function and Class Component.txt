@@ -1,0 +1,24 @@
+DIFFERENCE BETWEEN FUNCTION AND CLASS COMPONENTS
+	
+	1) Function Components
+		-> Defined as Javascript functions.
+		-> Introduced with React Hooks.
+		-> Syntax : Arrow or regular function.
+		-> State managed using useState and Hooks.
+		-> No lifecycle methods; replaced by Hooks lihe useEffect.
+		-> Generally lighter weight for better performance.
+		-> Context accessed using useContext Hook.
+		-> Encourages reusability and modularity.
+		-> Typically easier to read and understand.
+
+
+	2) Class Components
+		-> Defined as ES6 classes extends React.Component.
+		-> Traditional React components.
+		-> Syntax: Class with lifecycle methods.
+		-> State managed using this.state and this.setState.
+		-> Utilizes lifecycle methods like componentDidMount, componentDidUpdate and ect.
+		-> Slightly heavier in terms of performance optimization.
+		-> Context accessed using this.context.
+		-> Traditional approach for complex components.
+		-> More verbose and can be harder to read.

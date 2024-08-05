@@ -1,0 +1,5 @@
+DIFFERENCE BETWEEN PURE AND IMPURE COMPONENTS
+    -> Pure components rely on shallow comparisons to determine if re-rendering in necessary.
+    -> Impure components can re-render even if props or state haven't changed, due to exteranal factors affecting their behavior. 
+    -> Pure components are better suited for rendering when the input data remaining unchanged.
+    -> Impure components hnadle changes in exteral data or side effects, but need to be optimized to avoid unnecessary re-renders.

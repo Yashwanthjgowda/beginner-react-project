@@ -1,0 +1,23 @@
+CLASS COMPONENTS
+	1) Definition:
+		-> Class components are ES6 classes that extend 'React.component' and define the 'render' method to return JSX.
+
+	2) Syntax:
+		-> They use the class syntax introduced in ES6, with methods like 'render', 'componentDidMount', etc.
+
+	3) State Management:
+		-> Class components have their own internal state managed using the 'setState' method.
+
+	4) Lifecycle:
+		-> Class component can use lifecycle methods like 'componentDidMount', 'componentDidUpdate' and 'componentWillUpdate' for managing side effects.
+
+	5) Stateless/Stateful:
+		-> Class components can be stateless or stateful (When they manage their own state)
+
+	6) Performance:
+		-> Class components can have more overhead in terms of performance, especially when dealing with unnecessary re-renders.
+
+	7) Complexity:
+		-> For more complex components with state management and lifecycle needs, class components might be a better fit.
+
+
